@@ -1,0 +1,51 @@
+/*
+* @Author: YaYu
+* @Date:   2017-08-22 15:07:14
+* @Last Modified by:   YaYu
+* @Last Modified time: 2017-08-22 17:15:30
+*/
+main{
+	width: 800px;
+	height: auto;
+	margin: 40px auto;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+	border: 2px solid #aab0aa;
+}
+tr:nth-of-type(2n){
+	background: #c8edc8;
+}
+tr:nth-of-type(2n+1){
+	background: #e7f7ec;
+}
+#firstTr{
+	background: #898b8c;
+}
+th{
+	padding: 8px 12px;
+	border-bottom: 2px solid #aab0aa;
+}
+td{
+	padding: 6px 12px;
+	border-bottom: 1px solid #aab0aa;
+}
+button{
+	padding: 6px 10px;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+}
+.delBtn{
+	background: #0a5589;
+	color: #fff;
+}
+.addBtn{
+	background: #87260f;
+	color: #fff;
+	float: right;
+	margin-top: 20px;
+	margin-right: 36px;
+}

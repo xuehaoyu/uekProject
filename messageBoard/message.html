@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<section class="messageArea">
+		<h1 class="title">留言板</h1>
+		<h2 class="sTitle"><p>发表您的留言</p><a href="">送个礼物</a></h2>
+		<textarea name="" id="" cols="30" rows="10" maxlength="300" placeholder="欢迎留言！"></textarea>
+		<div class="submitBox">
+			<button class="submit">发表</button>
+		    <div class="numberL">您还能输入<span class="number">300</span>字</div>
+		</div>
+		<div class="Mtitle">显示签名档</div>
+		<ul class="message">
+		</ul>
+	</section>	
+</body>	
+</html>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+		list-style: none;
+		/* font-family:"汉仪行楷简"; */
+	}
+	::-webkit-input-placeholder{
+		color: #c3e8ff;
+	}
+	html,body{
+		width: 100%;
+		height: 100%;
+		padding: 20px 0;
+		background: #c3e8ff;
+		box-sizing: border-box;
+	}
+	.messageArea{
+		width: 900px;
+		height: 100%;
+		background: #fff;
+		margin: 0 auto;
+		padding: 18px 20px;
+		border-radius: 10px;
+		border: 1px solid #dddddd;
+		box-sizing: border-box;
+	}
+	.title{
+		width: 100%;
+		height: 32px;
+		font-size: 14px;
+		color: #558fb0;
+		border-bottom: 2px solid #dddddd;
+	}
+	.sTitle{
+		padding: 10px 0;
+		width: 100%;
+		height: 34px;
+		font-size: 14px;
+		line-height: 14px;
+		box-sizing: border-box;
+	}
+	.sTitle p {
+		float: left;
+	}
+	.sTitle a {
+		display: block;
+		color: #000;
+		margin-left: 18px;
+		height: 14px;
+		border-left: 1px solid #000;
+		padding-left: 18px;
+		float: left;
+	}
+	textarea{
+		width: 100%;
+		height: 124px;
+		background: #f5f5f5;
+		border: 1px solid #dddddd;
+		border-radius: 5px;
+		outline: none;
+		padding: 10px;
+		box-sizing: border-box;
+		resize: none;
+	}
+	.submitBox{
+		width: 100%;
+		height: 60px;
+		box-sizing: border-box;
+		padding-top: 5px;
+	}
+	.submit{
+		width: 72px;
+		height: 28px;
+		background: #7b8c9e;
+		border: 1px solid #6d7c8c;
+		box-sizing: border-box;
+		float: left;
+		border-radius: 5px;
+		outline: none;
+		font-size: 12px;
+		color: #fff;
+		line-height: 26px;
+		text-align: center;
+	}
+	.numberL{
+		height: 28px;
+		font-size: 14px;
+		line-height: 28px;
+		color: #a8a7bc;
+		float: right;
+	}
+	.number{
+		font-size: 18px;
+		color: red;
+		font-weight: bolder;
+	}
+	.Mtitle{
+		width: 100%;
+		height: 24px;
+		border-bottom: 1px solid #e0e0e0;
+		font-size: 12px;
+		color: #26709a;
+	}
+	.message{
+		width: 100%;
+		height: 239px;
+		overflow: auto;
+	}
+	.message>li{
+		width: 100%;
+		height: 70px;
+		padding-top: 20px;
+		box-sizing: border-box;
+		position: relative;
+	}
+	#messageLi{
+		background: red;
+	}
+	.message>li>img{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		border-radius: 5px;
+		margin-left: 10px;
+	}
+	.content{
+		position: relative;
+		margin-left: 60px;
+		padding-left: 20px;
+	}
+	.name{
+		font-size: 12px;
+		color: #26709a;
+		line-height: 12px;
+		padding-top: 2px;
+		margin-bottom: 10px;
+	}
+	.content>p{
+		font-size: 12px;
+		line-height: 12px;
+		color: #444444;
+	}
+</style>
+<script src="js/function.js"></script>
+<script>
+	let textArea = document.querySelector("textarea");
+	let number = document.querySelector(".number");
+	let maxLength = textArea.maxLength;
+	textArea.onkeyup = function () {
+		let textNumber = textArea.value.length;
+		number.innerText = `${maxLength-textNumber}`
+	}
+	let message = document.querySelector(".message");
+	let nameFloor = 0;
+	let submit = document.querySelector(".submit");
+	submit.onclick = textArea.onkeydown = function (e){
+		if(e.type == "click"){
+			fn.call(textArea);
+		}else if (e.type == "keydown"){
+			if(e.shiftKey && e.keyCode == 13){
+				fn.call(textArea);
+			}
+		}
+	}
+	function fn () {
+		let value = this.value;
+			this.value = "";
+			let newLi = document.createElement("li");
+			newLi.innerHTML = `
+				<img src="img/100.jpg" alt="">
+				<div class="content">
+					<div class="name">匿名第${nameFloor++}楼</div>
+					<p>${value}</p>
+				</div>	
+			`
+			message.prependChild(newLi);
+	}
+/*	message.onmouseover = function (e) {
+		let eName = e.target;
+			if(eName.nodeName == "LI"){
+			eName.style.background = "red";
+		}
+	}*/
+/*	textArea.onkeydown = function (e) {
+		if(e.shiftKey && e.keyCode == 17){
+			let value = this.value;
+			this.value = "";
+			let newLi = document.createElement("li");
+			newLi.innerHTML = `
+				<img src="img/100.jpg" alt="">
+				<div class="content">
+					<div class="name">匿名第${nameFloor++}楼</div>
+					<p>${value}</p>
+				</div>	
+			`
+			message.prependChild(newLi);
+		}
+	}
+	submit.onclick = function () {
+			let value = textArea.value;
+			textArea.value = "";
+			let newLi = document.createElement("li");
+			newLi.innerHTML = `
+				<img src="img/100.jpg" alt="">
+				<div class="content">
+					<div class="name">匿名第${nameFloor++}楼</div>
+					<p>${value}</p>
+				</div>	
+			`
+	}*/
+</script>
