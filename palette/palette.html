@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/palette.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<script src="js/palette.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<main>
+		<div class="left">
+			<h1>MYPALETTE</h1>
+			<h2 class="brushT">PencilBrush</h2>
+			<ul class="brush">
+				<li class="iconfont icon-qianbi"></li>
+				<li class="iconfont icon-fl-shuazi"></li>
+			</ul>
+			<h2 class="strFillT">Stroke/Fill</h2>
+			<div class="strFill">
+				<div class="iconfont icon-miaobian" id="stroke"></div>	
+				<div class="iconfont icon-tianchong" id="fill"></div>
+				<input type="color" id="strokeStyle">
+				<input type="color" id="fillStyle">
+			</div>			
+			<h2 class="erasureT">Erasure</h2>
+			<ul class="erasure">
+				<li class="iconfont icon-xiangpica_icon"></li>
+			</ul>
+			<h2 class="fontsT">PaintFonts</h2>
+			<ul class="fonts">
+				<li class="iconfont icon-wenzi"></li>
+			</ul>
+			<h2 class="lineT">PaintLine</h2>
+			<ul class="line">
+				<li class="iconfont icon-line1" id="line"></li>
+				<li class="iconfont icon--xuxian" id="dashed"></li>
+			</ul>
+			<h2 class="shapeT">PaintShape</h2>
+			<ul class="shape">
+				<li class="iconfont icon-iconfontwancheng" id="circle"></li>
+				<li class="iconfont icon-juxing" id="rects"></li>
+				<li class="iconfont icon-sanjiaoxing" id="triangle"></li>
+				<li class="iconfont icon-duobianxing1" id="poly"></li>
+				<li class="iconfont icon-wujiaoxing" id="polygon"></li>
+			</ul>
+			<h2 class="effectT">PaintEffect</h2>
+			<ul class="effect">
+				<li class="iconfont icon-jietu"></li>
+				<li class="iconfont icon-xuanzhuan"></li>
+			</ul>
+		</div>
+		<div class="right">
+			<div class="top">
+				<div class="iconfont icon-xinjian"></div>
+				<a class="iconfont icon-baocun"></a>
+				<div class="iconfont icon-ic_invert_colors_px"></div>
+				<div class="iconfont icon-cancel"></div>
+			</div>
+			<div class="bottomBox">
+				<div class="bottom">
+					<canvas></canvas>
+					<div class="eraser"></div>
+					<div class="mask"></div>
+					<div class="clipArea"></div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

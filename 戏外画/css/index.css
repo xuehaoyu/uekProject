@@ -1,0 +1,836 @@
+/*
+* @Author: YaYu
+* @Date:   2017-08-26 15:08:02
+* @Last Modified by:   YaYu
+* @Last Modified time: 2017-09-17 17:27:06
+*/
+/* 绑定字体：汉仪行楷简、汉仪行楷繁 */
+@font-face{
+	font-family: "hyxkJIAN";
+	src: url('../fonts/HYXingKaiJ.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: "hyxkFAN";
+	src: url('../fonts/HYXingKaiF.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: "hyxkJIAN","微软雅黑",sans-serif;
+}
+body{
+	background: #f1f3f4;
+}
+/* banner开始 */
+header{
+	width: 100%;
+	height: 638px;
+	background: #dde2e8;
+	margin: 0 auto;
+}
+.banner{
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/banner/banner4.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.webName{
+	width: 120px;
+	height: 120px;
+	background-image: url('../img/banner/moji3.png');
+	background-size: cover;
+	position: absolute;
+	left: 40px;
+	top: 40px;
+	text-align: center;
+	transition: all 0.5s;
+}
+.webName:hover{
+	transform: scale(1.1, 1.1)
+}
+.webName>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 14px 0;
+	font-size: 28px;
+	color: #000;
+	box-sizing: border-box;
+}
+.webName>a>p{
+	line-height: 28px;
+}
+.theme{
+	width: 120px;
+	height: 540px;
+	position: absolute;
+	top: 50%;
+	margin-top: -270px;
+	left: 400px;
+}
+.theme>.themeOne{
+	float: left;
+	width: 60px;
+	height: 100%;
+	box-sizing: border-box;
+}
+.theme>.themeOne:last-child{
+	padding-top: 120px;
+}
+.theme>.themeOne>li{
+	width: 60px;
+	height: 60px;
+	font-family: "hyxkFAN";
+	font-size: 34px;
+	line-height: 60px;
+	text-align: center;
+	opacity: 0;
+	transition: all 0.5s;
+}
+/* banner结束 */
+/* 侧导航开始 */
+aside{
+	width: 500px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: -300px;
+	transition: all 0.5s;
+	z-index: 99;
+}
+.asideFlag{
+	width: 200px;
+	height: 200px;
+	background-image: url('../img/aside/bannertitle1.png');
+	background-size: cover;
+	float: left;
+	cursor: pointer;
+}
+.asideBox{
+	width: 300px;
+	height: 100%;
+	background: #f1f3f4;
+  	float: left;
+}
+.bgAside{
+	width: 300px;
+	height: 100%;
+	background-image: url('../img/aside/asside.png');
+	background-size: cover;
+	opacity: 0.6;
+}
+.assideName{
+	width: 300px;
+	height: 180px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url('../img/aside/moji1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left;
+	text-align: center;
+	line-height: 180px;
+	font-size: 38px;
+	font-family: "hyxkFAN";
+}
+.aside{
+	width: 300px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 999;
+	padding-top: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	box-sizing: border-box;
+}
+.aside>li{
+	width: 100%;
+	height: 52px;
+	background-image: url('../img/aside/mokuang4.png');
+	background-size:  contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	line-height: 52px;
+	font-size: 22px;
+	cursor: pointer;
+	transition: all 1s;
+}
+.aside>li>a{
+	color: #000;
+}
+.aside>li:hover{
+	background: #000;
+	color: #fff;
+	font-family: "hyxkFAN";
+}
+.aside>li:hover a{
+	color: #fff;
+	font-family: "hyxkFAN";
+}
+/* 侧导航结束 */
+/* 君孤独开始 */
+.Floor{
+	width: 100%;
+	height: auto;
+}
+.aloneHead{
+	width: 100%;
+	height: 200px;
+	padding-top: 86px;
+	padding-bottom: 50px;
+	background: #f1f3f4;
+	position: relative;
+}
+.aloneTitle{
+	width: 200px;
+	height: 200px;
+	background-image: url('../img/alone/juntitle.png');
+	background-size: cover;
+	background-position: center;
+	font-size: 24px;
+	color: #f1f3f4;
+	box-sizing: border-box;
+	padding-top: 108px;
+	padding-left: 82px;
+	position: absolute;
+	top: 86px;
+	left: 50%;
+	margin-left: -100px;
+	transition: all 1s;
+}
+.aloneTheme{
+	width: 260px;
+	height: 112px;
+	padding-top: 88px;
+	margin: 0 auto;
+	opacity: 0;
+	transition: all 1s;
+}
+.aloneTheme>li{
+	width: 100%;
+	height: 50px;
+	font-size: 24px;
+	line-height: 50px;
+	text-align: center;
+}
+.aloneTheme>li:last-child{
+	margin-left: 50px;
+}
+/* 君孤独图片展示 */
+.aloneImgbBox{
+	width: 100%;
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+}
+.aloneImg{
+	width: 8000px;
+	height: 445px;
+	position: absolute;
+	margin-left: -130px;
+	transition: all 1.5s;
+}
+.aloneImg>.aloneImgF{
+	width: 260px;
+	height: 445px;
+	background: red;
+	float: left;
+	margin-right: 72px;
+}
+.aloneImg>li{
+	width: 260px;
+	height: 445px;
+	background: #fff;
+	float: left;
+	margin-right: 72px;
+	position: relative;
+}
+.aloneImg img{
+	width: 260px;
+	height: 445px;
+}
+.board{
+	width: 320px;
+	height: 144px;
+	background: #afa080;
+	position: absolute;
+	bottom: -34px;
+	left: -30px;
+	box-shadow: 0px 10px 30px 5px rgba(106, 114, 132, 0.8);
+	opacity: 0;
+	transition: all 1.5s;
+}
+.boardL{
+	width: 144px;
+	height: 144px;
+	background-image: url('../img/alone/title.png');
+	background-size: cover;
+	background-position: center;
+	font-size: 24px;
+	font-family: "hyxkFAN";
+	font-weight: bold;
+	box-sizing: border-box;
+	padding-top: 38px;
+	padding-left: 50px;
+	float: left;
+}
+.boardL>p{
+	line-height: 30px;
+}
+.boardR{
+	width: 176px;
+	height: 144px;
+	font-size: 24px;
+	padding-left: 30px;
+	line-height: 144px;
+	float: right;
+	color: #fff;
+	/* font-family: "微软雅黑"; */
+	box-sizing: border-box;
+}
+.aloneCircle{
+	width: 380px;
+	height: 16px;
+	position: absolute;
+	left: 50%;
+	margin-left: -190px;
+	bottom: 36px;
+}
+.aloneCircleLi{
+	width: 12px;
+	height: 12px;
+	float: left;
+	border: 2px solid #f1f3f4;
+	border-radius: 50%;
+	background: #afa080;
+	margin-right: 36px;
+	cursor: pointer;
+}
+.aloneCircle>li:last-child{
+	margin-right: 0;
+}
+.aloneCli{
+	width: 16px;
+	height: 16px;
+	border: none;
+	background-image: url("../img/alone/lunbodian.png");
+	background-size: cover;
+	background-position: center;
+}
+/* 君孤独结束*/
+/* 卿惆怅开始*/
+.cholyHead{
+	width: 100%;
+	height: 200px;
+	padding: 50px 0;
+	background: #f1f3f4;
+	position: relative;
+}
+.cholyTitle{
+	width: 150px;
+	height: 200px;
+	background-image: url('../img/choly/qingtitle.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-size: 24px;
+	color: #000;
+	box-sizing: border-box;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	padding-left: 96px;
+	padding-top: 110px;
+	margin-left: -75px;
+	transition: all 1s;
+}
+.cholyTitle>p{
+	line-height: 30px;
+}
+.cholyTheme{
+	width: 240px;
+	height: 120px;
+	padding-top: 80px;
+	margin: 0 auto;
+	transition: all 1s;
+	opacity: 0;
+}
+.cholyTheme>li{
+	width: 100%;
+	height: 30px;
+	font-size: 24px;
+	line-height: 30px;
+}
+.cholyTheme>li:nth-child(2){
+	padding-left: 74px;
+}
+.cholyTheme>li:nth-child(3){
+	padding-left: 74px;
+}
+.cholyTheme>li:nth-child(4){
+	padding-left: 52px;
+}
+/* 卿惆怅结束*/
+/* 玲珑骰子开始 */
+.diceHead{
+	width: 100%;
+	height: 220px;
+	padding: 50px 0;
+}
+.diceTitle{
+	width: 658px;
+	height: 220px;
+	background-image: url('../img/dice/dicehead.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	font-size: 24px;
+	font-family: "hyxkFAN";
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 20px;
+}
+.diceBox{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 33px;
+}
+.diceImg{
+	width: 300px;
+	height: 445px;
+	background: red;
+	position: relative;
+	border-radius: 5px;
+	transition: all 0.5s;
+}
+.diceImg>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.diceImg>a>img{
+	width: 300px;
+	height: 445px;
+	border-radius: 5px;
+}
+.diceImg:hover{
+	transform: translateY(-2px);
+	box-shadow: 0px 6px 20px 0px rgba(106, 114, 132, 0.8);
+}
+.diceChess{
+	width: 66px;
+	height: 66px;
+	background-image: url('../img/dice/chesspiece1.png');
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: -33px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 66px;
+}
+.diceChess>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #000;
+	font-family: "hyxkFAN";
+	font-size: 22px;
+}
+.diceBoxN{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 83px;
+}
+.diceChessN{
+	width: 66px;
+	height: 66px;
+	background-image: url('../img/dice/chesspiece2.png');
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: -33px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 66px;
+}
+.diceChessN>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 22px;
+	line-height: 22px;
+	color: #000;
+	box-sizing: border-box;
+	padding: 10px 8px;
+	font-family: "hyxkFAN"
+}
+.diceChessN>a>p{
+	width: 22px;
+	height: 22px;
+}
+.diceBoard{
+	width: 300px;
+	height: 120px;
+	background: rgba(179, 163, 134, 0.9);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-radius: 5px;
+	padding: 12px 0;
+	transition: all 0.8s;
+	opacity: 0;
+}
+.diceImg:hover .diceBoard{
+	opacity: 1;
+}
+.diceBoardL{
+	width: 120px;
+	height: 120px;
+	background-image: url('../img/dice/moji4.png');
+	background-size: cover;
+	background-position: center;
+	float: left;
+	padding-top: 40px;
+	padding-left: 60px;
+	box-sizing: border-box;
+	font-size: 24px;
+	font-family: "hyxkFAN";
+}
+.diceBoardR{
+	width: 180px;
+	height: 120px;
+	font-size: 22px;
+	color: #fff;
+	text-align: center;
+	line-height: 120px;
+	float: left;
+}
+/* 玲珑骰子结束 */
+/* 入骨相思开始 */
+.missHead{
+	width: 100%;
+	height: 220px;
+	padding: 66px 0;
+	position: relative;
+}
+.missTitle{
+	width: 302px;
+	height: 220px;
+	background-image: url('../img/miss/missHaed1.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	right: 50%;
+	top: 66px;
+	box-sizing: border-box;
+	padding-left: 174px;
+	padding-top: 66px;
+	font-size: 24px;
+}
+.missTheme{
+	width: 220px;
+	height: 220px;
+	height: 220px;
+	background-image: url('../img/miss/missHaed.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	left: 50%;
+	top: 66px;
+	box-sizing: border-box;
+	padding-left: 46px;
+	padding-top: 18px;
+	opacity: 0;
+	transition: all 1s;
+}
+.missTheme>li{
+	width: 22px;
+	height: 210px;
+	float: left;
+	font-size: 22px;
+	text-align: center;
+	line-height: 22px;
+}
+.missTheme>li:last-child{
+	padding-top: 44px;
+}
+.missBody{
+	width: 100%;
+	height: auto; 
+}
+.miss{
+	width: 900px;
+	height: 400px;
+	background: red;
+	margin: 0 auto;
+	margin-bottom: 130px;
+	border-radius: 5px;
+	position: relative;
+}
+.miss>img{
+	width: 900px;
+	height: 400px;
+	border-radius: 5px;
+}
+.firstFaceL,.keepL,.stoneL{
+	width: 512px;
+	height: 400px;
+	position: absolute;
+	left: -62px;
+	top: 0;
+	box-sizing: border-box;
+	transition: all 1s;
+	z-index: 10;
+}
+.firstFaceL{
+	background: url('../img/miss/misscoverL1.jpg') center/cover;
+	padding-left: 420px;
+	padding-top: 20px;
+}
+.keepL{
+	background: url('../img/miss/misscoverL2.jpg') center/cover;
+}
+.keepL>.keepT{
+	float: right;
+	margin-right: 56px;
+	margin-top: 28px;
+}
+.stoneL{
+	background: url('../img/miss/misscoverL3.jpg') center/cover;
+	padding-left: 420px;
+	padding-top: 66px;
+}
+.fHeartL,.kHeartL,.sHeartL{
+	width: 25px;
+	height: 54px;
+	background: url('../img/miss/missheartL.png') center/cover;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -25px;
+	color: #fff;
+	font-size: 20px;
+	font-family: "hyxkFAN";
+	padding-top: 6px;
+	padding-left: 6px;
+	box-sizing: border-box;
+	cursor: pointer;
+	z-index: 20;
+}
+.firstFaceR,.keepR,.stoneR{
+	width: 512px;
+	height: 400px;
+	position: absolute;
+	right: -62px;
+	top: 0;
+	box-sizing: border-box;
+	transition: all 1s;
+	z-index: 10;
+}
+.firstFaceR{
+	background: url('../img/miss/misscoverR1.jpg') center/cover;
+	padding-left: 72px;
+	padding-top: 130px;
+}
+.keepR{
+	background: url('../img/miss/misscoverR2.jpg') center/cover;
+}
+.keepR>.keepT{
+	float: left;
+}
+.keepR>.keepT:first-child{
+	margin-left: 44px;
+	margin-top: 150px;
+}
+.keepR>.keepT:nth-child(2){
+	margin-left: 10px;
+	margin-top: 190px;
+}
+.stoneR{
+	background: url('../img/miss/misscoverR3.jpg') center/cover;
+	padding-left: 72px;
+	padding-top: 130px;
+}
+.fHeartR,.kHeartR,.sHeartR{
+	width: 25px;
+	height: 54px;
+	background: url('../img/miss/missheartR.png') center/cover;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -25px;
+	color: #fff;
+	font-size: 20px;
+	padding-top: 6px;
+	padding-right: 6px;
+	font-family: "hyxkFAN";
+	box-sizing: border-box;
+	cursor: pointer;
+	z-index: 20;
+}
+.missCoverT>p{
+	font-size: 24px;
+	line-height: 30px;
+}
+.keepT>p{
+	font-size: 24px;
+	line-height: 30px;
+}
+.missBoard{
+	width: auto;
+	height: 120px;
+	background: rgba(179, 163, 134, 0.8);
+	position: absolute;
+	left: 0;
+	bottom: -60px;
+	border-radius: 50%;
+	opacity: 0;
+	transition: all 1s;
+	cursor: pointer;
+}
+.missBoardL{
+	width: 120px;
+	height: 120px;
+	color: #000;
+	font-size: 24px;
+	float: left;
+	background: url('../img/miss/missMJ.png') center/cover;
+	box-sizing: border-box;
+	padding-top: 50px;
+	padding-left: 16px;
+}
+.missBoardL>p:last-child{
+	margin-left: 20px;
+}
+/* 入骨相思结束 */
+/* 戏外画收尾：画中戏 */
+.end{
+	width: 100%;
+	height: auto;
+}
+.endHeader{
+	width: 100%;
+	height: 120px;
+	position: relative;
+}
+.endTitleT{
+	width: 120px;
+	height: 120px;
+	background-image: url('../img/end/moji4.png');
+	background-size: contain;
+	background-position: center;
+	position: absolute;
+	left: 56px;
+	top: 0;
+	box-sizing: border-box;
+	padding-top: 26px;
+	padding-left: 40px;
+}
+.endTitleT>p:first-child{
+	font-family: "hyxkFAN";
+	font-size: 50px;
+}
+.endTitleT>p:last-child{
+	margin-top: 8px;
+	margin-left: 36px;
+	font-size: 24px;
+}
+.endTitle{
+	width: 182px;
+	height: 60px;
+	background-image: url('../img/end/moji5.png');
+	background-size: contain;
+	background-position: center;
+	position: absolute;
+	left: 120px;
+	top: 60px;
+	font-size: 46px;
+	font-family: "hyxkFAN";
+	text-align: center;
+	line-height: 60px;
+}
+.endBody{
+	width: 100%;
+	height: 600px;
+	background-image: url('../img/end/endbanner.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.endPoemB{
+	width: auto;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	left: 430px;
+}
+.endPoemB>li{
+	width: 30px;
+	height: auto;
+	float: left;
+}
+.endPoemB>li:nth-child(1){
+	margin-right: 26px;
+}
+.endPoemB>li:nth-child(2){
+	margin-right: 70px;
+	padding-top: 60px;
+}
+.endPoemB>li:nth-child(3){
+	margin-right: 26px;
+}
+.endPoemB>li:nth-child(4){
+	margin-right: 84px;
+	padding-top: 60px;
+}
+.endPoemB>li:nth-child(5){
+	margin-right: 68px;
+}
+.endPoemB>li:nth-child(6){
+	padding-top: 60px;
+}
+.endPoemB>li>p{
+	width: 30px;
+	height: 30px;
+	font-size: 26px;
+	text-align: center;
+	line-height: 30px;
+}
+.endPoem{
+	transition: all 1.5s;
+}
+/* 戏外画收尾：画中戏 */
