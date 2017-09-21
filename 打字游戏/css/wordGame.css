@@ -1,0 +1,153 @@
+/*
+* @Author: YaYu
+* @Date:   2017-08-23 09:16:33
+* @Last Modified by:   YaYu
+* @Last Modified time: 2017-08-24 08:31:56
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/body.png');
+	background-size: cover;
+	height: 500px;
+}
+.char{
+	width: 50px;
+	height: 50px;
+	/* background-image: url('../img/A.png'); */
+	background-size: cover;
+	font-family: "Algerian","微软雅黑","serif";
+	font-size: 0px;
+	color: #1d4465;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.score,.life{
+	font-family: "汉仪行楷繁","微软雅黑","serif";
+	font-size: 20px;
+	color: #fff;
+}
+.score{
+	width: 120px;
+	height: 35px;
+	font-size: 20px;
+	text-align: center;
+	position: fixed;
+	background-image: url('../img/score.png');
+	background-size: cover;
+	left: 0;
+	top: 10px;
+	transition: all 0.5s;
+	padding-top: 20px;
+}
+.score>div{
+	width: auto;
+	height: 100%;
+	line-height: 20px;
+	float: left;
+	margin-left: 20px;
+}
+.score>p{
+	font-size: 20px;
+	line-height: 20px;
+	height: 100%;
+	float: left;
+}
+.score:hover{
+	transform: scale(1.3, 1.3);
+}
+.life{
+	width: 120px;
+	height: 35px;
+	padding-top: 20px;
+	font-size: 20px;
+	line-height: 55px;
+	text-align: center;
+	position: fixed;
+	background-image: url('../img/life.png');
+	background-size: cover;
+	left: 0;
+	top: 75px;
+	transition: all 0.5s;
+}
+.life:hover{
+	transform: scale(1.3, 1.3);
+}
+.life>div{
+	width: auto;
+	height: 100%;
+	line-height: 20px;
+	float: left;
+	margin-left: 20px;
+}
+.life>p{
+	font-size: 20px;
+	line-height: 20px;
+	height: 100%;
+	float: left;
+}
+.start{
+	width: 80px;
+	height: 80px;
+	background-image: url('../img/start.png');
+	background-size: cover;
+	font-family: "汉仪行楷繁","微软雅黑","serif";
+	color: #fff;
+	font-size: 30px;
+	line-height: 80px;
+	text-align: center;
+	position: fixed;
+	right: 10px;
+	bottom: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.start:hover{
+	transform: scale(1.5, 1.5);
+}
+.stop{
+	width: 80px;
+	height: 80px;
+	background: url('../img/stop.png');
+	background-size: cover;
+	font-family: "汉仪行楷繁","微软雅黑","serif";
+	color: #fff;
+	font-size: 30px;
+	line-height: 80px;
+	text-align: center;
+	position: fixed;
+	right: 10px;
+	bottom: 110px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.stop:hover{
+	transform: scale(1.5, 1.5);
+}
+.exit{
+	width: 80px;
+	height: 80px;
+	background: url('../img/end.png');
+	background-size: cover;
+	font-family: "汉仪行楷繁","微软雅黑","serif";
+	color: #fff;
+	font-size: 30px;
+	line-height: 80px;
+	text-align: center;
+	position: fixed;
+	right: 10px;
+	bottom: 20px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.exit:hover{
+	transform: scale(1.5, 1.5);
+}

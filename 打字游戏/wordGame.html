@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/wordGame.css">
+	<script src="js/wordGame.js"></script>
+</head>
+<body>
+	<div class="score"><div>得分:</div><p>0</p></div>
+	<div class="life"><div>生命:</div><p>10</p></div>
+	<div class="start">开始</div>
+	<div class="stop">暂停</div>
+	<div class="exit">退出</div>
+</body>
+</html>
+<script>
+window.onload = function () {
+	let start = document.querySelector(".start");
+	let stop = document.querySelector(".stop");
+	let exit = document.querySelector(".exit");
+	let game = new wordGame;
+	let flag = true;
+	start.onclick  = function () {
+		if(flag){
+			flag = false;
+			game.start();
+		}
+	}
+	stop.onclick = function () {
+		flag = true;
+		clearInterval(game.t);
+	}
+	exit.onclick = function(){
+		close();
+	}
+}
+</script>
