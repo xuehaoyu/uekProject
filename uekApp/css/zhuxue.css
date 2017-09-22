@@ -1,0 +1,256 @@
+/*
+* @Author: YaYu
+* @Date:   2017-07-22 16:21:02
+* @Last Modified by:   YaYu
+* @Last Modified time: 2017-07-22 17:15:38
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+/* 头部开始 */
+header{
+	width: 100%;
+	height: 0.92rem;
+	background: #0078e6;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 99;
+}
+.header-center{
+	width: 2.01rem;
+	height: 0.92rem;
+	background: #0078e6;
+	margin: 0 auto;
+}
+.haitun-logo{
+	width: 0.71rem;
+	height: 0.67rem;
+	background: #0078e6;
+	float: left;
+	margin-top: 0.13rem;
+}
+.haitun-logo img{
+	display: block;
+	width: 0.71rem;
+	height: 0.67rem;
+}
+.header-title{
+	width: 1.15rem;
+	height: 0.37rem;
+	background: #0078e6;
+	float: right;
+	font-size: 0.37rem;
+	color: #fff;
+	font-family: "黑体";
+	text-align: center;
+	line-height: 0.37rem;
+	margin-top: 0.28rem;
+}
+/* 头部结束 */
+/* banner开始 */
+.banner-box{
+	width: 100%;
+	height: 2.8rem;
+	background: blue;
+}
+.banner-box img{
+	display: block;
+	width: 100%;
+	height: 2.8rem;
+}
+.banner-box a{
+	display: block;
+	width: 100%;
+	height: 2.8rem;
+}
+/* banner结束 */
+/* 主体 */
+main{
+	width: 7.02rem;
+	height: 100%;
+	/* backgrousnd: pink; */
+	margin: 0 auto;
+}
+/* 首页头部 */
+.shouye-head{
+	width: 100%;
+	height: 0.52rem;
+	background: #f5f6fa;
+	padding-top: 0.3rem;
+}
+.shouye-title{
+	height: 0.23rem;
+	width: 100%;
+	background: #f5f6fa; 
+}
+.shouye{
+	width: 0.57rem;
+	height: 0.23rem;
+	float: left;
+	font-size: 0.23rem;
+	line-height: 0.23rem;
+	margin-right: 0.22rem;
+	color: #000;
+}
+.shouye-center{
+	width: 0.08rem;
+	height: 0.23rem;
+	float: left;
+	font-size: 0.23rem;
+	line-height: 0.23rem;
+	margin-right: 0.3rem;
+}
+.shouye-right{
+	height: 0.23rem;
+	float: left;
+	font-size: 0.23rem;
+	line-height: 0.23rem;
+}
+/* 首页头部 */
+/* 助学贷款开始 */
+.view-zhuxue{
+	width: 100%;
+	height: 15.3rem;
+	background: #f5f6fa;
+}
+.zhuxue-box{
+	width: 100%;
+	height: 15.3rem;
+	background: #fff;
+}
+.head{
+	width: 100%;
+	height: 0.67rem;
+	background: #fff;
+}
+.head-left{
+	width: 0.04rem;
+	height: 0.2rem;
+	background: #01b5ff;
+	float: left;
+	margin-left: 0.19rem;
+	margin-top: 0.32rem;
+}
+.head-right{
+	/* width: 0.58rem; */
+	height: 0.22rem;
+	background: #fff;
+	font-size: 0.22rem;
+	line-height: 0.22rem;
+	color: #000;
+	float: left;
+	margin-left: 0.2rem;
+	margin-top: 0.3rem;
+}
+.daikuan{
+	width: 6.4rem;
+	height: 9.7rem;
+	background: #fff;
+	margin-left: 0.42rem;
+	border-top: 0.01rem dashed #999999;
+	overflow: hidden;
+}
+.daikuan p{
+	font-size: 0.23rem;
+	color: #666666;
+	margin-bottom: 0.48rem;
+}
+.daikuan p:first-child{
+	margin-top: 0.16rem;
+}
+.daikuan2{
+	width: 100%;
+	height: 3.62rem;
+	background: #474747;
+}
+.daikuan-xian{
+	width: 6.4rem;
+	height: 0.31rem;
+	background: #fff;
+	margin-left: 0.42rem;
+	border-bottom: 0.01rem dashed #999999;
+	margin-bottom: 0.26rem;
+}
+.fenxiang-box{
+	width: 100%;
+	height: 0.4rem;
+	background: #fff;
+}
+.fenxiang{
+	height: 0.23rem;
+	background: #fff;
+	float: left;
+	font-size: 0.23rem;
+	line-height: 0.23rem;
+	margin-left: 0.2rem;
+	margin-top: 0.07rem;
+}
+.kongjian{
+	display: block;
+	width: 0.4rem;
+	height: 0.4rem;
+	float: left;
+	border-radius: 50%;
+	margin-right: 0.2rem;
+}
+.kongjian img{
+	display: block;
+	width: 0.4rem;
+	height: 0.4rem;
+}
+.cai{
+	width: 0.4rem;
+	height: 0.4rem;
+	float: right;
+	border-radius: 50%;
+	margin-right: 0.2rem;
+}
+.cai img{
+	display: block;
+	width: 0.4rem;
+	height: 0.4rem;
+}
+.zan{
+	width: 0.4rem;
+	height: 0.4rem;
+	float: right;
+	border-radius: 50%;
+	margin-right: 0.2rem;
+}
+.zan img{
+	display: block;
+	width: 0.4rem;
+	height: 0.4rem;
+}
+/* 贷款结束 */
+/* 结尾部分开始 */
+footer{
+	width: 100%;
+	height: 0.84rem;
+	background: #f5f6fa;
+	padding-top: 0.32rem;
+}
+.jieshu1{
+	width: 100%;
+	height: 0.2rem;
+	background: #f5f6fa;
+	font-size: 0.2rem;
+	color: #666666;
+	text-align: center;
+	line-height: 0.2rem;
+	margin-bottom: 0.13rem;
+}
+.jieshu2{
+	width: 100%;
+	height: 0.2rem;
+	background: #f5f6fa;
+	font-size: 0.2rem;
+	color: #666666;
+	text-align: center;
+	line-height: 0.2rem;
+}
+/* 结尾部分结束 */

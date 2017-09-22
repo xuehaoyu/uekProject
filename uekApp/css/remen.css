@@ -1,0 +1,377 @@
+/*
+* @Author: YaYu
+* @Date:   2017-07-22 12:24:42
+* @Last Modified by:   YaYu
+* @Last Modified time: 2017-07-22 17:16:09
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+/* 头部开始 */
+header{
+	width: 100%;
+	height: 0.92rem;
+	background: #0078e6;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 99;
+}
+.header-center{
+	width: 2.01rem;
+	height: 0.92rem;
+	background: #0078e6;
+	margin: 0 auto;
+}
+.haitun-logo{
+	width: 0.71rem;
+	height: 0.67rem;
+	background: #0078e6;
+	float: left;
+	margin-top: 0.13rem;
+}
+.haitun-logo img{
+	display: block;
+	width: 0.71rem;
+	height: 0.67rem;
+}
+.header-title{
+	width: 1.15rem;
+	height: 0.37rem;
+	background: #0078e6;
+	float: right;
+	font-size: 0.37rem;
+	color: #fff;
+	font-family: "黑体";
+	text-align: center;
+	line-height: 0.37rem;
+	margin-top: 0.28rem;
+}
+/* 头部结束 */
+/* banner开始 */
+.banner-box{
+	width: 100%;
+	height: 2.8rem;
+	background: blue;
+}
+.banner-box img{
+	display: block;
+	width: 100%;
+	height: 2.8rem;
+}
+.banner-box a{
+	display: block;
+	width: 100%;
+	height: 2.8rem;
+}
+/* banner结束 */
+/* 主体 */
+main{
+	width: 7.02rem;
+	height: 100%;
+	/* backgrousnd: pink; */
+	margin: 0 auto;
+}
+/* 首页头部 */
+.shouye-head{
+	width: 100%;
+	height: 0.52rem;
+	background: #f5f6fa;
+	padding-top: 0.3rem;
+}
+.shouye-title{
+	height: 0.23rem;
+	width: 100%;
+	background: #f5f6fa; 
+}
+.shouye{
+	width: 0.57rem;
+	height: 0.23rem;
+	float: left;
+	font-size: 0.23rem;
+	line-height: 0.23rem;
+	margin-right: 0.22rem;
+	color: #000;
+}
+.shouye-center{
+	width: 0.08rem;
+	height: 0.23rem;
+	float: left;
+	font-size: 0.23rem;
+	line-height: 0.23rem;
+	margin-right: 0.3rem;
+}
+.shouye-right{
+	width: 1.2rem;
+	height: 0.23rem;
+	float: left;
+	font-size: 0.23rem;
+	line-height: 0.23rem;
+}
+/* 首页头部 */
+/* 热门开始 */
+.view-remen{
+	width: 100%;
+	height: 13.85rem;
+	padding-bottom: 0.1rem;
+	background: #f5f6fa;
+}
+.remen-box{
+	width: 100%;
+	height: 13.85rem;
+	background: #fff;
+}
+.remen-head{
+	width: 100%;
+	height: 0.82rem;
+	background: #fff;
+}
+.head-left{
+	width: 0.04rem;
+	height: 0.2rem;
+	background: #01b5ff;
+	float: left;
+	margin-left: 0.2rem;
+	margin-top: 0.32rem;
+	margin-right: 0.2rem;
+}
+.head-right{
+	height: 0.22rem;
+	background: #fff;
+	float: left;
+	margin-top: 0.32rem;
+	font-size: 0.22rem;
+	color: #000;
+	line-height: 0.22rem;
+}
+.remmen{
+	width: 100%;
+	height: 1.47rem;
+	background: #fff;
+}
+.remmen-left{
+	width: 0.08rem;
+	height: 0.08rem;
+	background: #fff;
+	border: 0.02rem solid #01b5ff;
+	border-radius: 50%;
+	float: left;
+	margin-left: 0.16rem;
+	margin-right: 0.15rem;
+	margin-top: 0.04rem;
+	box-shadow: 0 0.01rem 0.05rem 0.02rem #aee7ff;
+}
+.remen-left1{
+	width: 0.04rem;
+	height: 0.04rem;
+	background: #01b5ff;
+	margin: 0 auto;
+	margin-top: 0.02rem;
+	border-radius: 50%;
+}
+.remmen-right{
+	width: 6.41rem;
+	height: 1.47rem;
+	background: #fff;
+	float: left; 
+	font-size: 0.22rem;
+	color: #666666;
+}
+.quanbu{
+	width: 100%;
+	height: 0.21rem;
+	background: #fff;
+	font-size: 0.21rem;
+	text-align: center;
+	line-height: 0.21rem;
+}
+.quanbu a{
+	color: #ff9300;
+}
+.remen-bottom{
+	width: 6.4rem;
+	height: 0.2rem;
+	background: #fff;
+	border-bottom: 0.01rem dashed #999999;
+	margin-left: 0.42rem;
+}
+/* 热门结束 */
+/* 翻页栏开始 */
+.view-fanye{
+	width: 100%;
+	height: 0.7rem;
+	background: #fff;
+}
+.fanye-box{
+	width: 100%;
+	height: 0.51rem;
+	background: #fff;
+	padding-top: 0.19rem;
+}
+.jiantou-left{
+	width: 0.56rem;
+	height: 0.28rem;
+	background: #fff;
+	border: 0.01rem solid #999999;
+	border-radius: 0.12rem;
+	float: left;
+	margin-left: 0.1rem;
+	margin-right: 0.1rem;
+}
+.jiantou-left1{
+	width: 0.48rem;
+	height: 0.23rem;
+	background: #fff;
+	border: 0.01rem solid #000;
+	border-radius: 0.09rem;
+	margin: 0 auto;
+	margin-top: 0.02rem;
+}
+.fanye1{
+	width: 0.3rem;
+	height: 0.3rem;
+	background: #fff;
+	float: left;
+	border: 0.01rem solid #999999;
+	border-radius: 50%;
+	margin-right: 0.1rem;
+}
+.fanye1-1{
+	width: 0.24rem;
+	height: 0.24rem;
+	background: #fff;
+	border: 0.01rem solid #000;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-top: 0.02rem;
+	font-size: 0.1rem;
+	color: #000;
+	text-align: center;
+	line-height: 0.24rem;
+}
+.fanye4{
+	width: 0.3rem;
+	height: 0.3rem;
+	background: #01b5ff;
+	float: left;
+	border: 0.01rem solid #01b5ff;
+	border-radius: 50%;
+	margin-right: 0.1rem;
+}
+.fanye4-1{
+	width: 0.24rem;
+	height: 0.24rem;
+	background: #01b5ff;
+	border: 0.01rem solid #fff;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-top: 0.02rem;
+	font-size: 0.1rem;
+	color: #000;
+	text-align: center;
+	line-height: 0.24rem;
+	box-shadow: 0 0.03rem 0.05rem 0.03rem #74d6ff;
+}
+.fanye-xian{
+	width: 0.08rem;
+	height: 0;
+	border: 0.02rem dashed #000;
+	float: left;
+	margin-left: 0.04rem;
+	margin-top: 0.19rem;
+	margin-right: 0.18rem;
+}
+.jiantou-left1 .iconfont{
+	font-size: 0.2rem;
+	text-align: center;
+	line-height: 0.23rem;
+	color: #292929;
+}
+.tiaozhi{
+	width: 0.86rem;
+	height: 0.14rem;
+	float: left;
+	margin-left: 0.05rem;
+	margin-top: 0.12rem;
+	font-size: 0.14rem;
+	line-height: 0.14rem;
+}
+.tiaozhuan{
+	width: 0.56rem;
+	height: 0.28rem;
+	background: #fff;
+	border: 0.01rem solid #e5e5e5;
+	border-radius: 0.12rem;
+	float: left;
+	margin-right: 0.06rem;
+}
+.tiaozhuan1{
+	width: 0.48rem;
+	height: 0.23rem;
+	background: #fafafa;
+	border: 0.01rem solid #dcdbdb;
+	border-radius: 0.09rem;
+	margin: 0 auto;
+	margin-top: 0.02rem;
+}
+.ye{
+	width: 0.14rem;
+	height: 0.13rem;
+	float: left;
+	margin-right: 0.2rem;
+	margin-top: 0.12rem;
+	font-size: 0.13rem;
+	line-height: 0.13rem;
+}
+.go{
+	width: 0.3rem;
+	height: 0.3rem;
+	background: #fff;
+	float: left;
+	border: 0.01rem solid #999999;
+	border-radius: 50%;
+}
+.go1-1{
+	width: 0.24rem;
+	height: 0.24rem;
+	background: #fff;
+	border: 0.01rem solid #000;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-top: 0.02rem;
+	font-size: 0.1rem;
+	color: #000;
+	text-align: center;
+	line-height: 0.24rem;
+}
+/* 翻页栏结束 */
+/* 结尾部分开始 */
+footer{
+	width: 100%;
+	height: 0.8rem;
+	background: #f5f6fa;
+	padding-top: 0.2rem;
+}
+.jieshu1{
+	width: 100%;
+	height: 0.2rem;
+	background: #f5f6fa;
+	font-size: 0.2rem;
+	color: #666666;
+	text-align: center;
+	line-height: 0.2rem;
+	margin-bottom: 0.13rem;
+}
+.jieshu2{
+	width: 100%;
+	height: 0.2rem;
+	background: #f5f6fa;
+	font-size: 0.2rem;
+	color: #666666;
+	text-align: center;
+	line-height: 0.2rem;
+}
+/* 结尾部分结束 */
